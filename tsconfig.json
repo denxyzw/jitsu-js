@@ -1,22 +1,13 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
-    "sourceMap": true,
-    "lib": [
-      "es5",
-      "es6",
-      "dom"
-    ]
+    "outDir": "./lib",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false
   },
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+  "include": [
+    "./src"
   ]
 }
